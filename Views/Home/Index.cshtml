@@ -1,0 +1,134 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Management System</title>
+
+    ```
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .hero {
+            background: linear-gradient(to right, #4facfe, #00f2fe);
+            color: white;
+            padding: 100px 0;
+            text-align: center;
+        }
+
+            .hero h1 {
+                font-size: 3rem;
+                font-weight: bold;
+            }
+
+            .hero p {
+                font-size: 1.2rem;
+            }
+
+        .feature-box {
+            padding: 30px;
+            border-radius: 10px;
+            transition: 0.3s;
+            background: #f8f9fa;
+        }
+
+            .feature-box:hover {
+                transform: translateY(-5px);
+                box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            }
+
+        footer {
+            background: #343a40;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        a {
+            color: white;
+        }
+    </style>
+    ```
+
+</head>
+<body>
+
+    ```
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Product System</a>
+
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/Home/Index">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Home/Addproduct">Add Product</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/Home/ViewProduct">View Products</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Product Management System</h1>
+            <p>Manage your products, categories, pricing, and inventory in one place.</p>
+            <a href="/Home/Addproduct" class="btn btn-light btn-lg mt-3">Add New Product</a>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="py-5">
+        <div class="container text-center">
+            <h2 class="mb-4">Key Features</h2>
+            <div class="row">
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <h4>Add Products</h4>
+                        <p>Easily add new products with name, category, price, and details.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <h4>Update Products</h4>
+                        <p>Edit product details anytime to keep your data accurate.</p>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="feature-box">
+                        <h4>Manage Inventory</h4>
+                        <p>Track product quantity and maintain stock efficiently.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-primary text-white text-center py-5">
+        <div class="container">
+            <h3>Start Managing Your Products Today</h3>
+            <p>Simple, fast, and effective product management solution.</p>
+            <a href="/Home/ViewProduct" class="btn btn-light">View Products</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2026 Product Management System | All Rights Reserved</p>
+    </footer>
+    ```
+
+</body>
+</html>
